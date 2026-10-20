@@ -1,0 +1,12 @@
+{
+  "_shape": "GHSA or CVE id -> {\"class\": \"short label\", \"writeup\": \"https://assakaf.com/articles/...\", \"cvss\": 7.5}; every key optional. The script falls back to the CWE name, to the CVE record and to the CVSS 4.0 score GitHub publishes.",
+  "GHSA-hgr8-qvp5-mhch": {"class": "MFA bypass (CWE-287)", "writeup": "https://assakaf.com/articles/glpi-mfa-bypass-request-uri/"},
+  "GHSA-75qm-gp28-rcq9": {"class": "Prototype pollution to data disclosure (CWE-1321)", "writeup": "https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/"},
+  "GHSA-59xh-5vwx-4c4q": {"class": "Privilege escalation to superuser (CWE-697)", "writeup": "https://assakaf.com/articles/paperless-ngx-privesc/"},
+  "GHSA-233r-fpgw-fx8x": {"class": "Node parameter injection to blind SSRF (CWE-918)"},
+  "GHSA-r4cx-rg3p-25g7": {"class": "Path traversal to arbitrary file read (CWE-22)"},
+  "GHSA-g293-vf99-xv36": {"class": "Anonymous DoS via alias amplification (CWE-770)"},
+  "GHSA-vp6f-78w7-v422": {"class": "MFA secret overwrite (CWE-287)"},
+  "GHSA-vqrf-cjv6-rf89": {"class": "Unauthenticated cross-tenant disclosure (CWE-285)"},
+  "GHSA-qrh6-cwg3-343x": {"class": "Authorization bypass in comment likes (CWE-943)"}
+}
