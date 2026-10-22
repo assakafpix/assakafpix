@@ -3,8 +3,8 @@
 
 Source of truth is GitHub itself: every published advisory that credits HANDLE, read from the
 repositories listed in REPOS plus the global advisory database. Nothing is hand-maintained
-except that list, and advisories.json for a short class label, a write-up link, or a CVSS
-score when GitHub publishes none.
+except that list, and advisories.json for a short class label, a write-up link, a CVSS score
+when GitHub publishes none, or a CVE assigned by a CNA that GitHub has not linked yet.
 
 Each row links, in this order of preference:
   1. the write-up on the blog, when advisories.json has one for that advisory,
@@ -124,6 +124,12 @@ def notes_de(a, notes):
     return notes.get(a["ghsa_id"]) or notes.get(a.get("cve_id") or "") or {}
 
 
+def cve_de(a, notes):
+    """Le CVE rattache par GitHub, sinon celui de l override. Une CNA tierce (VulnCheck,
+    Patchstack) publie parfois un CVE que GitHub n a pas encore associe a l advisory."""
+    return a.get("cve_id") or notes_de(a, notes).get("cve")
+
+
 def classe(a, notes):
     n = notes_de(a, notes)
     if n.get("class"):
@@ -140,8 +146,9 @@ def lien(a, notes):
     n = notes_de(a, notes)
     if n.get("writeup"):
         return n["writeup"]
-    if a.get("cve_id"):
-        return "https://www.cve.org/CVERecord?id=" + a["cve_id"]
+    cve = cve_de(a, notes)
+    if cve:
+        return "https://www.cve.org/CVERecord?id=" + cve
     return a.get("html_url") or ("https://github.com/advisories/" + a["ghsa_id"])
 
 
@@ -159,10 +166,19 @@ def score_de(a, notes):
     return float(s) if s else None
 
 
-def badge(a, notes):
+def sev_de(a, notes):
+    """Severite effective. Quand l override fournit le score, la severite que GitHub publie
+    suit son propre vecteur et ne correspond plus: on reprend la bande du score."""
+    n = notes_de(a, notes)
+    if n.get("cvss"):
+        s = float(n["cvss"])
+        return "critical" if s >= 9 else "high" if s >= 7 else "medium" if s >= 4 else "low"
     sev = (a.get("severity") or "").lower()
-    if sev == "moderate":
-        sev = "medium"
+    return "medium" if sev == "moderate" else sev
+
+
+def badge(a, notes):
+    sev = sev_de(a, notes)
     score = score_de(a, notes)
     txt = ("%.1f %s" % (score, sev.title())) if score is not None else sev.title()
     return "![%s](https://img.shields.io/badge/%s-%s?style=flat-square)" % (
@@ -177,15 +193,15 @@ def main():
             vus[a["ghsa_id"]] = (projet, a)
 
     ordre = sorted(vus.values(), key=lambda t: (
-        RANG.get((t[1].get("severity") or "").lower(), 9),
+        RANG.get(sev_de(t[1], notes), 9),
         -(score_de(t[1], notes) or 0),
         t[1].get("published_at") or ""))
 
     lignes = ["| [%s](%s) | `%s` | %s | %s |" % (
-        a.get("cve_id") or a["ghsa_id"], lien(a, notes), projet, badge(a, notes), classe(a, notes))
+        cve_de(a, notes) or a["ghsa_id"], lien(a, notes), projet, badge(a, notes), classe(a, notes))
         for projet, a in ordre]
 
-    cves = sum(1 for _, a in ordre if a.get("cve_id"))
+    cves = sum(1 for _, a in ordre if cve_de(a, notes))
     table = ("| Advisory | Project | CVSS | Class |\n|:---|:---|:---|:---|\n" + "\n".join(lignes))
 
     txt = README.read_text(encoding="utf-8")

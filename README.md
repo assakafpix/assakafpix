@@ -17,8 +17,8 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [GHSA-g293-vf99-xv36](https://github.com/directus/directus/security/advisories/GHSA-g293-vf99-xv36) | `directus` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Anonymous DoS via alias amplification (CWE-770) |
 | [GHSA-59xh-5vwx-4c4q](https://assakaf.com/articles/paperless-ngx-privesc/) | `paperless-ngx` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Privilege escalation to superuser (CWE-697) |
 | [CVE-2026-59206](https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/) | `n8n` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Prototype pollution to data disclosure (CWE-1321) |
+| [CVE-2026-103288](https://www.cve.org/CVERecord?id=CVE-2026-103288) | `Ghost` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Authorization bypass in comment likes (CWE-639) |
 | [GHSA-vp6f-78w7-v422](https://github.com/docmost/docmost/security/advisories/GHSA-vp6f-78w7-v422) | `docmost` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | MFA secret overwrite (CWE-287) |
-| [GHSA-qrh6-cwg3-343x](https://github.com/TryGhost/Ghost/security/advisories/GHSA-qrh6-cwg3-343x) | `Ghost` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | Authorization bypass in comment likes (CWE-943) |
 | [GHSA-233r-fpgw-fx8x](https://github.com/n8n-io/n8n/security/advisories/GHSA-233r-fpgw-fx8x) | `n8n` | ![6.0 Medium](https://img.shields.io/badge/6.0-Medium-d4a72c?style=flat-square) | Node parameter injection to blind SSRF (CWE-918) |
 | [GHSA-vqrf-cjv6-rf89](https://github.com/docmost/docmost/security/advisories/GHSA-vqrf-cjv6-rf89) | `docmost` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Unauthenticated cross-tenant disclosure (CWE-285) |
 <!-- ADVISORIES:END -->
