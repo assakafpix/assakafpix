@@ -13,6 +13,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
 | [CVE-2026-52848](https://assakaf.com/articles/glpi-mfa-bypass-request-uri/) | `glpi` | ![9.2 Critical](https://img.shields.io/badge/9.2-Critical-8b1a1a?style=flat-square) | MFA bypass (CWE-287) |
+| [CVE-2026-117635](https://github.com/go-gitea/gitea/security/advisories/GHSA-37xv-m4w7-j2fh) | `gitea` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Token scope bypass on the admin API (CWE-284) |
 | [GHSA-r4cx-rg3p-25g7](https://github.com/docmost/docmost/security/advisories/GHSA-r4cx-rg3p-25g7) | `docmost` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Path traversal to arbitrary file read (CWE-22) |
 | [GHSA-g293-vf99-xv36](https://github.com/directus/directus/security/advisories/GHSA-g293-vf99-xv36) | `directus` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Anonymous DoS via alias amplification (CWE-770) |
 | [GHSA-59xh-5vwx-4c4q](https://assakaf.com/articles/paperless-ngx-privesc/) | `paperless-ngx` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Privilege escalation to superuser (CWE-697) |
