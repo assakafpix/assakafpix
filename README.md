@@ -21,7 +21,9 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [CVE-2026-103288](https://www.cve.org/CVERecord?id=CVE-2026-103288) | `Ghost` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Authorization bypass in comment likes (CWE-639) |
 | [GHSA-vp6f-78w7-v422](https://github.com/docmost/docmost/security/advisories/GHSA-vp6f-78w7-v422) | `docmost` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | MFA secret overwrite (CWE-287) |
 | [GHSA-233r-fpgw-fx8x](https://github.com/n8n-io/n8n/security/advisories/GHSA-233r-fpgw-fx8x) | `n8n` | ![6.0 Medium](https://img.shields.io/badge/6.0-Medium-d4a72c?style=flat-square) | Node parameter injection to blind SSRF (CWE-918) |
+| [CVE-2026-121746](https://github.com/nvm-sh/nvm/security/advisories/GHSA-8qjx-8r8m-mpqh) | `nvm` | ![5.5 Medium](https://img.shields.io/badge/5.5-Medium-d4a72c?style=flat-square) | Symlink following to arbitrary file overwrite (CWE-59) |
 | [GHSA-vqrf-cjv6-rf89](https://github.com/docmost/docmost/security/advisories/GHSA-vqrf-cjv6-rf89) | `docmost` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Unauthenticated cross-tenant disclosure (CWE-285) |
+| [CVE-2026-121751](https://github.com/nvm-sh/nvm/security/advisories/GHSA-7prg-rw9c-82h7) | `nvm` | ![3.1 Low](https://img.shields.io/badge/3.1-Low-6e7781?style=flat-square) | Mirror-supplied version string to shell arithmetic evaluation (CWE-78) |
 <!-- ADVISORIES:END -->
 
 <sub>Rows link to the write-up when one is published, otherwise to the CVE record or the advisory. Verify independently in the [GitHub Advisory Database](https://github.com/advisories?query=credit%3Aassakafpix). Reports in triage are not listed until the maintainer publishes.</sub>
