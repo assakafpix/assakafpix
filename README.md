@@ -11,7 +11,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 
 <!-- ADVISORIES:START -->
 
-18 advisories: 2 Critical, 8 High, 7 Medium, 1 Low.
+20 advisories: 2 Critical, 8 High, 9 Medium, 1 Low.
 
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
@@ -22,7 +22,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [CVE-2026-59206](https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/) | `n8n` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Prototype pollution to data disclosure (CWE-1321) |
 
 <details>
-<summary>13 more advisories (5 High, 7 Medium, 1 Low)</summary>
+<summary>15 more advisories (5 High, 9 Medium, 1 Low)</summary>
 
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
@@ -35,8 +35,10 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [CVE-2026-125652](https://access.redhat.com/security/cve/cve-2026-125652) | `keycloak` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | Mandatory PKCE bypass via the password reset flow (CWE-862) |
 | [CVE-2026-121885](https://github.com/podman-container-tools/podman/security/advisories/GHSA-55rm-rwr7-q2wr) | `podman` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | Arbitrary systemd unit restart via image auto-update labels (CWE-807) |
 | [CVE-2026-77074](https://github.com/n8n-io/n8n/security/advisories/GHSA-233r-fpgw-fx8x) | `n8n` | ![6.0 Medium](https://img.shields.io/badge/6.0-Medium-d4a72c?style=flat-square) | Node parameter injection to blind SSRF (CWE-918) |
+| [GHSA-hqmv-qgp3-jx75](https://github.com/isaacs/minimatch/security/advisories/GHSA-hqmv-qgp3-jx75) | `minimatch` | ![5.9 Medium](https://img.shields.io/badge/5.9-Medium-d4a72c?style=flat-square) | Memory exhaustion via the global pattern cache (CWE-400) |
 | [CVE-2026-121746](https://github.com/nvm-sh/nvm/security/advisories/GHSA-8qjx-8r8m-mpqh) | `nvm` | ![5.5 Medium](https://img.shields.io/badge/5.5-Medium-d4a72c?style=flat-square) | Symlink following to arbitrary file overwrite (CWE-59) |
 | [GHSA-vqrf-cjv6-rf89](https://github.com/docmost/docmost/security/advisories/GHSA-vqrf-cjv6-rf89) | `docmost` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Unauthenticated cross-tenant disclosure (CWE-285) |
+| [GHSA-h59h-rf6m-7jp5](https://github.com/n8n-io/n8n/security/advisories/GHSA-h59h-rf6m-7jp5) | `n8n` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Trigger activation uses credentials the publisher cannot access (CWE-862) |
 | [CVE-2026-111361](https://github.com/podman-container-tools/container-libs/security/advisories/GHSA-pggw-qqjf-6cxw) | `container-libs` | ![4.6 Medium](https://img.shields.io/badge/4.6-Medium-d4a72c?style=flat-square) | Image digest and signature validation bypass (CWE-345) |
 | [CVE-2026-121751](https://github.com/nvm-sh/nvm/security/advisories/GHSA-7prg-rw9c-82h7) | `nvm` | ![3.1 Low](https://img.shields.io/badge/3.1-Low-6e7781?style=flat-square) | Mirror-supplied version string to shell arithmetic evaluation (CWE-78) |
 
