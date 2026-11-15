@@ -19,7 +19,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [GHSA-5rq2-4mjm-m7q2](https://github.com/Budibase/budibase/security/advisories/GHSA-5rq2-4mjm-m7q2) | `budibase` | ![9.1 Critical](https://img.shields.io/badge/9.1-Critical-8b1a1a?style=flat-square) | Unauthenticated automation execution via User-Agent trust (CWE-807) |
 | [GHSA-jp85-8jq5-9gv6](https://github.com/requarks/wiki/security/advisories/GHSA-jp85-8jq5-9gv6) | `wiki.js` | ![9.0 Critical](https://img.shields.io/badge/9.0-Critical-8b1a1a?style=flat-square) | Stored XSS to administrator account creation (CWE-79) |
 | [CVE-2026-117635](https://github.com/go-gitea/gitea/security/advisories/GHSA-37xv-m4w7-j2fh) | `gitea` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Token scope bypass on the admin API (CWE-284) |
-| [GHSA-whp2-qr7v-7cf3](https://github.com/seaweedfs/seaweedfs/security/advisories/GHSA-whp2-qr7v-7cf3) | `seaweedfs` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Object Lock bypass on bucket deletion (CWE-863) |
+| [CVE-2026-59206](https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/) | `n8n` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Prototype pollution to data disclosure (CWE-1321) |
 
 <details>
 <summary>22 more advisories (7 High, 14 Medium, 1 Low)</summary>
@@ -28,11 +28,11 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 |:---|:---|:---|:---|
 | [GHSA-848h-794v-rmq9](https://github.com/requarks/wiki/security/advisories/GHSA-848h-794v-rmq9) | `wiki.js` | ![8.3 High](https://img.shields.io/badge/8.3-High-cf222e?style=flat-square) | Page rule bypass by creating a feedback board (CWE-863) |
 | [GHSA-r4cx-rg3p-25g7](https://github.com/docmost/docmost/security/advisories/GHSA-r4cx-rg3p-25g7) | `docmost` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Path traversal to arbitrary file read (CWE-22) |
+| [GHSA-whp2-qr7v-7cf3](https://github.com/seaweedfs/seaweedfs/security/advisories/GHSA-whp2-qr7v-7cf3) | `seaweedfs` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Object Lock bypass on bucket deletion (CWE-863) |
 | [GHSA-g293-vf99-xv36](https://github.com/directus/directus/security/advisories/GHSA-g293-vf99-xv36) | `directus` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Anonymous DoS via alias amplification (CWE-770) |
 | [CVE-2026-110932](https://access.redhat.com/security/cve/cve-2026-110932) | `keycloak` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Unauthenticated disk exhaustion via theme gzip cache (CWE-400) |
 | [GHSA-59xh-5vwx-4c4q](https://assakaf.com/articles/paperless-ngx-privesc/) | `paperless-ngx` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Privilege escalation to superuser (CWE-697) |
 | [CVE-2026-103288](https://www.cve.org/CVERecord?id=CVE-2026-103288) | `Ghost` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Authorization bypass in comment likes (CWE-639) |
-| [CVE-2026-59206](https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/) | `n8n` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Prototype pollution to data disclosure (CWE-1321) |
 | [GHSA-vp6f-78w7-v422](https://github.com/docmost/docmost/security/advisories/GHSA-vp6f-78w7-v422) | `docmost` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | MFA secret overwrite (CWE-287) |
 | [CVE-2026-125652](https://access.redhat.com/security/cve/cve-2026-125652) | `keycloak` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | Mandatory PKCE bypass via the password reset flow (CWE-862) |
 | [CVE-2026-121885](https://github.com/podman-container-tools/podman/security/advisories/GHSA-55rm-rwr7-q2wr) | `podman` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | Arbitrary systemd unit restart via image auto-update labels (CWE-807) |
