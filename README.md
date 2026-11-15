@@ -11,35 +11,42 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 
 <!-- ADVISORIES:START -->
 
-20 advisories: 2 Critical, 8 High, 9 Medium, 1 Low.
+27 advisories: 3 Critical, 9 High, 14 Medium, 1 Low.
 
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
 | [CVE-2026-52848](https://assakaf.com/articles/glpi-mfa-bypass-request-uri/) | `glpi` | ![9.2 Critical](https://img.shields.io/badge/9.2-Critical-8b1a1a?style=flat-square) | MFA bypass (CWE-287) |
 | [GHSA-5rq2-4mjm-m7q2](https://github.com/Budibase/budibase/security/advisories/GHSA-5rq2-4mjm-m7q2) | `budibase` | ![9.1 Critical](https://img.shields.io/badge/9.1-Critical-8b1a1a?style=flat-square) | Unauthenticated automation execution via User-Agent trust (CWE-807) |
+| [GHSA-jp85-8jq5-9gv6](https://github.com/requarks/wiki/security/advisories/GHSA-jp85-8jq5-9gv6) | `wiki.js` | ![9.0 Critical](https://img.shields.io/badge/9.0-Critical-8b1a1a?style=flat-square) | Stored XSS to administrator account creation (CWE-79) |
 | [CVE-2026-117635](https://github.com/go-gitea/gitea/security/advisories/GHSA-37xv-m4w7-j2fh) | `gitea` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Token scope bypass on the admin API (CWE-284) |
 | [GHSA-whp2-qr7v-7cf3](https://github.com/seaweedfs/seaweedfs/security/advisories/GHSA-whp2-qr7v-7cf3) | `seaweedfs` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Object Lock bypass on bucket deletion (CWE-863) |
-| [CVE-2026-59206](https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/) | `n8n` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Prototype pollution to data disclosure (CWE-1321) |
 
 <details>
-<summary>15 more advisories (5 High, 9 Medium, 1 Low)</summary>
+<summary>22 more advisories (7 High, 14 Medium, 1 Low)</summary>
 
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
+| [GHSA-848h-794v-rmq9](https://github.com/requarks/wiki/security/advisories/GHSA-848h-794v-rmq9) | `wiki.js` | ![8.3 High](https://img.shields.io/badge/8.3-High-cf222e?style=flat-square) | Page rule bypass by creating a feedback board (CWE-863) |
 | [GHSA-r4cx-rg3p-25g7](https://github.com/docmost/docmost/security/advisories/GHSA-r4cx-rg3p-25g7) | `docmost` | ![8.1 High](https://img.shields.io/badge/8.1-High-cf222e?style=flat-square) | Path traversal to arbitrary file read (CWE-22) |
 | [GHSA-g293-vf99-xv36](https://github.com/directus/directus/security/advisories/GHSA-g293-vf99-xv36) | `directus` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Anonymous DoS via alias amplification (CWE-770) |
 | [CVE-2026-110932](https://access.redhat.com/security/cve/cve-2026-110932) | `keycloak` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Unauthenticated disk exhaustion via theme gzip cache (CWE-400) |
 | [GHSA-59xh-5vwx-4c4q](https://assakaf.com/articles/paperless-ngx-privesc/) | `paperless-ngx` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Privilege escalation to superuser (CWE-697) |
 | [CVE-2026-103288](https://www.cve.org/CVERecord?id=CVE-2026-103288) | `Ghost` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Authorization bypass in comment likes (CWE-639) |
+| [CVE-2026-59206](https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/) | `n8n` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Prototype pollution to data disclosure (CWE-1321) |
 | [GHSA-vp6f-78w7-v422](https://github.com/docmost/docmost/security/advisories/GHSA-vp6f-78w7-v422) | `docmost` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | MFA secret overwrite (CWE-287) |
 | [CVE-2026-125652](https://access.redhat.com/security/cve/cve-2026-125652) | `keycloak` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | Mandatory PKCE bypass via the password reset flow (CWE-862) |
 | [CVE-2026-121885](https://github.com/podman-container-tools/podman/security/advisories/GHSA-55rm-rwr7-q2wr) | `podman` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | Arbitrary systemd unit restart via image auto-update labels (CWE-807) |
+| [GHSA-47c8-3859-4ccf](https://github.com/requarks/wiki/security/advisories/GHSA-47c8-3859-4ccf) | `wiki.js` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | Protected asset overwrite via file name sanitization (CWE-863) |
+| [GHSA-gv55-77xw-q5v3](https://github.com/requarks/wiki/security/advisories/GHSA-gv55-77xw-q5v3) | `wiki.js` | ![6.3 Medium](https://img.shields.io/badge/6.3-Medium-d4a72c?style=flat-square) | Locale-scoped group rule bypass via empty locale (CWE-863) |
 | [CVE-2026-77074](https://github.com/n8n-io/n8n/security/advisories/GHSA-233r-fpgw-fx8x) | `n8n` | ![6.0 Medium](https://img.shields.io/badge/6.0-Medium-d4a72c?style=flat-square) | Node parameter injection to blind SSRF (CWE-918) |
+| [GHSA-74j8-43gw-p2pr](https://github.com/requarks/wiki/security/advisories/GHSA-74j8-43gw-p2pr) | `wiki.js` | ![5.9 Medium](https://img.shields.io/badge/5.9-Medium-d4a72c?style=flat-square) | Page source disclosure in the edit suggestion queue (CWE-862) |
 | [GHSA-hqmv-qgp3-jx75](https://github.com/isaacs/minimatch/security/advisories/GHSA-hqmv-qgp3-jx75) | `minimatch` | ![5.9 Medium](https://img.shields.io/badge/5.9-Medium-d4a72c?style=flat-square) | Memory exhaustion via the global pattern cache (CWE-400) |
 | [CVE-2026-121746](https://github.com/nvm-sh/nvm/security/advisories/GHSA-8qjx-8r8m-mpqh) | `nvm` | ![5.5 Medium](https://img.shields.io/badge/5.5-Medium-d4a72c?style=flat-square) | Symlink following to arbitrary file overwrite (CWE-59) |
 | [GHSA-vqrf-cjv6-rf89](https://github.com/docmost/docmost/security/advisories/GHSA-vqrf-cjv6-rf89) | `docmost` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Unauthenticated cross-tenant disclosure (CWE-285) |
 | [GHSA-h59h-rf6m-7jp5](https://github.com/n8n-io/n8n/security/advisories/GHSA-h59h-rf6m-7jp5) | `n8n` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Trigger activation uses credentials the publisher cannot access (CWE-862) |
+| [GHSA-35c7-6872-jrh6](https://github.com/requarks/wiki/security/advisories/GHSA-35c7-6872-jrh6) | `wiki.js` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Draft and scheduled page disclosure (CWE-200) |
 | [CVE-2026-111361](https://github.com/podman-container-tools/container-libs/security/advisories/GHSA-pggw-qqjf-6cxw) | `container-libs` | ![4.6 Medium](https://img.shields.io/badge/4.6-Medium-d4a72c?style=flat-square) | Image digest and signature validation bypass (CWE-345) |
+| [GHSA-5539-6c4x-464h](https://github.com/requarks/wiki/security/advisories/GHSA-5539-6c4x-464h) | `wiki.js` | ![4.3 Medium](https://img.shields.io/badge/4.3-Medium-d4a72c?style=flat-square) | Page title disclosure via glossary terms (CWE-863) |
 | [CVE-2026-121751](https://github.com/nvm-sh/nvm/security/advisories/GHSA-7prg-rw9c-82h7) | `nvm` | ![3.1 Low](https://img.shields.io/badge/3.1-Low-6e7781?style=flat-square) | Mirror-supplied version string to shell arithmetic evaluation (CWE-78) |
 
 </details>
