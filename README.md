@@ -22,7 +22,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [CVE-2026-59206](https://assakaf.com/articles/n8n-prototype-pollution-auth-bypass/) | `n8n` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Prototype pollution to data disclosure (CWE-1321) |
 
 <details>
-<summary>22 more advisories (7 High, 14 Medium, 1 Low)</summary>
+<summary>More</summary>
 
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
