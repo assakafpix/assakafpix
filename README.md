@@ -11,7 +11,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 
 <!-- ADVISORIES:START -->
 
-27 advisories: 3 Critical, 9 High, 14 Medium, 1 Low.
+28 advisories: 3 Critical, 9 High, 15 Medium, 1 Low.
 
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
@@ -45,6 +45,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [GHSA-vqrf-cjv6-rf89](https://github.com/docmost/docmost/security/advisories/GHSA-vqrf-cjv6-rf89) | `docmost` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Unauthenticated cross-tenant disclosure (CWE-285) |
 | [GHSA-h59h-rf6m-7jp5](https://github.com/n8n-io/n8n/security/advisories/GHSA-h59h-rf6m-7jp5) | `n8n` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Trigger activation uses credentials the publisher cannot access (CWE-862) |
 | [GHSA-35c7-6872-jrh6](https://github.com/requarks/wiki/security/advisories/GHSA-35c7-6872-jrh6) | `wiki.js` | ![5.3 Medium](https://img.shields.io/badge/5.3-Medium-d4a72c?style=flat-square) | Draft and scheduled page disclosure (CWE-200) |
+| [CVE-2026-18553](https://github.com/advisories/GHSA-j9f7-gcx8-w37p) | `mattermost` | ![4.8 Medium](https://img.shields.io/badge/4.8-Medium-d4a72c?style=flat-square) | Terminal escape sequence injection via `mmctl logs` (CWE-150) |
 | [CVE-2026-111361](https://github.com/podman-container-tools/container-libs/security/advisories/GHSA-pggw-qqjf-6cxw) | `container-libs` | ![4.6 Medium](https://img.shields.io/badge/4.6-Medium-d4a72c?style=flat-square) | Image digest and signature validation bypass (CWE-345) |
 | [GHSA-5539-6c4x-464h](https://github.com/requarks/wiki/security/advisories/GHSA-5539-6c4x-464h) | `wiki.js` | ![4.3 Medium](https://img.shields.io/badge/4.3-Medium-d4a72c?style=flat-square) | Page title disclosure via glossary terms (CWE-863) |
 | [CVE-2026-121751](https://github.com/nvm-sh/nvm/security/advisories/GHSA-7prg-rw9c-82h7) | `nvm` | ![3.1 Low](https://img.shields.io/badge/3.1-Low-6e7781?style=flat-square) | Mirror-supplied version string to shell arithmetic evaluation (CWE-78) |
