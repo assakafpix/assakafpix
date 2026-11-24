@@ -11,7 +11,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 
 <!-- ADVISORIES:START -->
 
-30 advisories: 3 Critical, 10 High, 16 Medium, 1 Low.
+32 advisories: 3 Critical, 11 High, 17 Medium, 1 Low.
 
 | Advisory | Project | CVSS | Class |
 |:---|:---|:---|:---|
@@ -32,6 +32,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [GHSA-g293-vf99-xv36](https://github.com/directus/directus/security/advisories/GHSA-g293-vf99-xv36) | `directus` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Anonymous DoS via alias amplification (CWE-770) |
 | [CVE-2026-110932](https://access.redhat.com/security/cve/cve-2026-110932) | `keycloak` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Unauthenticated disk exhaustion via theme gzip cache (CWE-400) |
 | [CVE-2026-130647](https://github.com/fastify/fastify-http-proxy/security/advisories/GHSA-6fhg-8r33-fcww) | `fastify-http-proxy` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | Denial of service via a pipelined WebSocket upgrade (CWE-248) |
+| [GHSA-xfcm-rmv3-crmq](https://github.com/Automattic/mongoose/security/advisories/GHSA-xfcm-rmv3-crmq) | `mongoose` | ![7.5 High](https://img.shields.io/badge/7.5-High-cf222e?style=flat-square) | `sanitizeProjection` bypass exposes fields deselected with `select: false` (CWE-200) |
 | [GHSA-59xh-5vwx-4c4q](https://assakaf.com/articles/paperless-ngx-privesc/) | `paperless-ngx` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Privilege escalation to superuser (CWE-697) |
 | [CVE-2026-103288](https://www.cve.org/CVERecord?id=CVE-2026-103288) | `Ghost` | ![7.1 High](https://img.shields.io/badge/7.1-High-cf222e?style=flat-square) | Authorization bypass in comment likes (CWE-639) |
 | [GHSA-vp6f-78w7-v422](https://github.com/docmost/docmost/security/advisories/GHSA-vp6f-78w7-v422) | `docmost` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | MFA secret overwrite (CWE-287) |
@@ -39,6 +40,7 @@ Vulnerability research on self-hosted open source, coordinated disclosure.
 | [CVE-2026-133228](https://access.redhat.com/security/cve/cve-2026-133228) | `keycloak` | ![6.8 Medium](https://img.shields.io/badge/6.8-Medium-d4a72c?style=flat-square) | Step-up authentication bypass via the credential reset flow (CWE-308) |
 | [CVE-2026-121885](https://github.com/podman-container-tools/podman/security/advisories/GHSA-55rm-rwr7-q2wr) | `podman` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | Arbitrary systemd unit restart via image auto-update labels (CWE-807) |
 | [GHSA-47c8-3859-4ccf](https://github.com/requarks/wiki/security/advisories/GHSA-47c8-3859-4ccf) | `wiki.js` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | Protected asset overwrite via file name sanitization (CWE-863) |
+| [GHSA-5554-xpxf-j3jr](https://github.com/Automattic/mongoose/security/advisories/GHSA-5554-xpxf-j3jr) | `mongoose` | ![6.5 Medium](https://img.shields.io/badge/6.5-Medium-d4a72c?style=flat-square) | `sanitizeProjection` keeps projection expressions, reading field values under other keys (CWE-200) |
 | [GHSA-gv55-77xw-q5v3](https://github.com/requarks/wiki/security/advisories/GHSA-gv55-77xw-q5v3) | `wiki.js` | ![6.3 Medium](https://img.shields.io/badge/6.3-Medium-d4a72c?style=flat-square) | Locale-scoped group rule bypass via empty locale (CWE-863) |
 | [CVE-2026-77074](https://github.com/n8n-io/n8n/security/advisories/GHSA-233r-fpgw-fx8x) | `n8n` | ![6.0 Medium](https://img.shields.io/badge/6.0-Medium-d4a72c?style=flat-square) | Node parameter injection to blind SSRF (CWE-918) |
 | [GHSA-74j8-43gw-p2pr](https://github.com/requarks/wiki/security/advisories/GHSA-74j8-43gw-p2pr) | `wiki.js` | ![5.9 Medium](https://img.shields.io/badge/5.9-Medium-d4a72c?style=flat-square) | Page source disclosure in the edit suggestion queue (CWE-862) |
